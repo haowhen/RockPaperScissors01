@@ -8,6 +8,7 @@
     android:paddingBottom="@dimen/activity_vertical_margin"
     tools:context=".MainActivity">
 
+
     <TextView
         android:id="@+id/textView1"
         android:layout_width="wrap_content"
@@ -23,8 +24,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_alignParentBottom="true"
-        android:layout_marginBottom="100dp"
-        android:layout_marginRight="20dp"
+        android:layout_marginBottom="10dp"
         android:layout_toLeftOf="@+id/textView1"
         android:background="@drawable/rock"/>
 
@@ -35,7 +35,7 @@
         android:layout_alignBaseline="@+id/buttonRock"
         android:layout_alignBottom="@+id/buttonRock"
         android:layout_centerHorizontal="true"
-        android:background="@drawable/paper" />
+        android:background="@drawable/paper"/>
 
     <Button
         android:id="@+id/buttonScissors"
@@ -43,7 +43,6 @@
         android:layout_height="wrap_content"
         android:layout_alignBaseline="@+id/buttonPaper"
         android:layout_alignBottom="@+id/buttonPaper"
-        android:layout_marginLeft="23dp"
         android:layout_toRightOf="@+id/textView1"
         android:background="@drawable/scissors" />
 
@@ -51,8 +50,7 @@
         android:id="@+id/imageViewAnswerUser"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_below="@+id/textView1"
-        android:layout_marginTop="26dp"
+        android:layout_marginTop="150dp"
         android:layout_toLeftOf="@+id/buttonPaper"
         android:src="@drawable/questionmark"/>
 
@@ -63,6 +61,24 @@
         android:layout_alignRight="@+id/buttonScissors"
         android:layout_alignTop="@+id/imageViewAnswerUser"
         android:src="@drawable/questionmark"/>
+    <ImageView
+        android:id="@+id/ImageUser"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/you"
+        android:layout_alignTop="@+id/ImageAndroid"
+        android:layout_toLeftOf="@+id/textView1"
+        android:layout_toStartOf="@+id/textView1"/>
+
+    <ImageView
+        android:id="@+id/ImageAndroid"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/android"
+        android:layout_above="@+id/ImageViewAnswerAndroid"
+        android:layout_alignLeft="@+id/buttonScissors"
+        android:layout_alignStart="@+id/buttonScissors"/>
+
 
 
 </RelativeLayout>
