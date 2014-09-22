@@ -1,0 +1,90 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    tools:context=".MainActivity">
+
+
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Rock, Paper, Scissors!"
+        tools:context=".RockPaperScissors"
+        android:layout_marginBottom="100dp"
+        android:textSize="50dp"
+        android:layout_above="@+id/ImageUser"
+        android:layout_centerHorizontal="true"
+        android:gravity="fill_horizontal|center_horizontal"/>
+
+    <Button
+        android:id="@+id/buttonRock"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="338dp"
+        android:background="@drawable/rock"
+        android:layout_alignParentBottom="true"
+        android:layout_alignLeft="@+id/imageViewAnswerUser"
+        android:layout_alignStart="@+id/imageViewAnswerUser"/>
+
+    <Button
+        android:id="@+id/buttonPaper"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/buttonRock"
+        android:layout_alignBottom="@+id/buttonRock"
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/paper"/>
+
+    <Button
+        android:id="@+id/buttonScissors"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/scissors"
+        android:layout_alignTop="@+id/buttonPaper"
+        android:layout_alignRight="@+id/ImageViewAnswerAndroid"
+        android:layout_alignEnd="@+id/imageViewAnswerUser"/>
+
+    <ImageView
+        android:id="@+id/imageViewAnswerUser"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/questionmark"
+        android:layout_toStartOf="@+id/buttonPaper"
+        android:layout_marginBottom="121dp"
+        android:layout_above="@+id/buttonRock"
+        android:layout_toLeftOf="@+id/buttonPaper"/>
+
+    <ImageView
+        android:id="@+id/ImageViewAnswerAndroid"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/questionmark"
+        android:layout_toEndOf="@+id/buttonPaper"
+        android:layout_alignTop="@+id/imageViewAnswerUser"
+        android:layout_toRightOf="@+id/buttonPaper"/>
+    <ImageView
+        android:id="@+id/ImageUser"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/you"
+        android:layout_alignTop="@+id/ImageAndroid"
+        android:layout_alignRight="@+id/buttonRock"
+        android:layout_alignEnd="@+id/buttonRock"/>
+
+    <ImageView
+        android:id="@+id/ImageAndroid"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/android"
+        android:layout_above="@+id/ImageViewAnswerAndroid"
+        android:layout_alignLeft="@+id/buttonScissors"
+        android:layout_alignStart="@+id/buttonScissors"/>
+
+
+
+</RelativeLayout>
