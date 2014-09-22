@@ -58,9 +58,10 @@
         android:id="@+id/ImageViewAnswerAndroid"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_alignRight="@+id/buttonScissors"
+        android:src="@drawable/questionmark"
+        android:layout_toEndOf="@+id/buttonPaper"
         android:layout_alignTop="@+id/imageViewAnswerUser"
-        android:src="@drawable/questionmark"/>
+        android:layout_toRightOf="@+id/buttonPaper"/>
     <ImageView
         android:id="@+id/ImageUser"
         android:layout_width="wrap_content"
